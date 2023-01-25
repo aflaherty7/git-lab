@@ -1,159 +1,129 @@
-Answer 1= git version 2.17.1
+Answer 1: 
 
-Answer 2= user.name=Aidan Flaherty
-	user.email=af674321@ohio.edu
+git version 2.17.1
 
-Answer 3= It gives me the name of the file, the Synopsis,description, options, configurations, examples, interactive mode, and editing patches.
+Answer 2: 
 
-Answer 4= Untracked files:
+user.name=Aidan Flaherty
+user.email=af674321@ohio.edu
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/aflaherty7/git-lab.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+aflahert@odd19:~/git-lab$ 
+
+
+Answer 3:
+
+It opens up the Git Manual for all the help
+
+Answer 4:
+
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+	modified:   answers.md
+
+Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
-	README.md
-	answers.md
+	git-lab-2/
 
-Answer 5= Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
+no changes added to commit (use "git add" and/or "git commit -a")
 
-	new file:   README.md
-	new file:   answers.md
+Answer 5: 
 
-Answer 6= Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
+On branch main
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
 
-	new file:   README.md
-	new file:   answers.md
+	modified:   README.md
 
-Answer 7 = aflahert@odd19:~/git-lab$ git commit -m "Initial commit"
-[master 1ba805d] Initial commit
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 .README.md.swp
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   answers.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	git-lab-2/
+
+Answer 6: 
+
+On branch main
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+	modified:   answers.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git-lab-2/
+
+
+Answer 7: 
+
+[main 32041dd] Initil commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git-lab-2/README.md
 aflahert@odd19:~/git-lab$ git status
-On branch master
+On branch main
+nothing to commit, working tree clean
 
 
-Answer 8= commit 1ba805daf50f61cd895b32ae2ec4a72dffff77ca (HEAD -> master)
+
+Answer 8:
+
+commit 32041dd48470598cab796a478d3062c3109f6415 (HEAD -> main)
 Author: Aidan Flaherty <af674321@ohio.edu>
-Date:   Tue Jan 24 19:10:08 2023 -0500
+Date:   Tue Jan 24 21:56:34 2023 -0500
 
-    Initial commit
+Answer 9:
 
-commit 5d331fc68d2c612551c13533b7306457d802d8ba
-Author: Aidan Flaherty <af674321@ohio.edu>
-Date:   Tue Jan 24 19:09:18 2023 -0500
+Counting objects: 15, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (15/15), 2.29 KiB | 292.00 KiB/s, done.
+Total 15 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/aflaherty7/git-lab.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
 
-    Initial commit
+Answer 10: 
+
+No, because we haven't pushed it yet
+
+Answer 11:
+
+It rejected me because the files havne't been pulled locally yet 
+
+To https://github.com/aflaherty7/git-lab.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/aflaherty7/git-lab.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 aflahert@odd19:~/git-lab$ 
 
-Answer 9= on Branch main Your branch is up to date with 'orgin/main'.
 
+Answer 12:
+It merged my files
 
+All modified files have been saved.
+Merge made by the 'recursive' strategy.
 
-Answer 10 = No
+Answer 13:
 
-Answer 11 = fatal: The current branch main has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin main
-
-aflahert@odd19:~/git-lab$ 
-
-Answer 12 = There is no tracking information for the current branch.
-Please specify which branch you want to merge with.
-See git-pull(1) for details.
-
-    git pull <remote> <branch>
-
-If you wish to set tracking information for this branch you can do so with:
-
-    git branch --set-upstream-to=origin/<branch> main
-
-
-Answer 13 = aflahert@odd19:~/git-lab$ ls -a
-.  ..  answers.md  .git  git-lab-2  README.md  .README.md.swp
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Answer 12= 
-fatal: The current branch main has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin main
-
-aflahert@odd19:~/git-lab$ git pull
-There is no tracking information for the current branch.
-Please specify which branch you want to merge with.
-See git-pull(1) for details.
-
-    git pull <remote> <branch>
-
-If you wish to set tracking information for this branch you can do so with:
-
-    git branch --set-upstream-to=origin/<branch> main
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+aflahert@odd19:~/git-lab$ ls -a
+.  ..  answers.md  DEADJOE  .git  git-lab-2  README.md
